@@ -1,0 +1,133 @@
+.result-card {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  border: 2px solid;
+  text-align: center;
+  transition: all 0.4s;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+}
+
+.result-card h2 {
+  font-size: 28px;
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.status {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.circle-progress {
+  width: 140px;
+  height: 140px;
+  margin: 15px auto;
+}
+
+.circle-progress svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.4);
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+}
+
+.percentage {
+  fill: #fff;
+  font-size: 0.5em;
+  text-anchor: middle;
+  transform: rotate(90deg);
+}
+
+.weight-diff {
+  font-size: 18px;
+  color: #00ffff;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.advice-list {
+  text-align: right; /* تراز از راست */
+  color: #ddd;
+}
+
+.advice-list h3 {
+  font-size: 17px;
+  margin: 10px 0 5px;
+}
+
+.advice-list ul {
+  list-style: none;
+  padding: 0 15px; /* پدینگ برای تراز بهتر */
+  margin: 0;
+}
+
+.advice-list li {
+  margin: 8px 0;
+  text-align: right; /* تراز دقیق‌تر از راست */
+  display: block; /* حذف flex برای زیر هم بودن */
+  padding-right: 10px;
+}
+
+.advice-list i {
+  margin-left: 8px;
+  color: #00ff7f;
+  font-size: 16px;
+}
+
+/* Responsive برای موبایل */
+@media (max-width: 600px) {
+  .result-card {
+    margin-right: -10px;
+    padding-left: 5px;
+    max-width: 90vw;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .result-card h2 {
+    font-size: 22px;
+  }
+  .status {
+    font-size: 16px;
+  }
+  .circle-progress {
+    width: 90px;
+    height: 90px;
+  }
+  .weight-diff {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .advice-list h3 {
+    font-size: 15px;
+  }
+  .advice-list ul {
+    padding: 0 10px;
+  }
+  .advice-list li {
+    font-size: 13px;
+    padding-right: 5px; /* کاهش پدینگ برای فیت شدن */
+  }
+  .advice-list i {
+    font-size: 14px;
+    margin-left: 6px;
+  }
+}
